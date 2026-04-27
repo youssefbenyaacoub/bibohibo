@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+
+@font-face {
+  font-family: 'Orange Avenue';
+  src: url('../OrangeAvenueDEMO-Regular.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Orange Avenue Outline';
+  src: url('../OrangeAvenueOutlineDEMO-Regular.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Telma';
+  src: url('/fonts/telma/Telma-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Telma';
+  src: url('/fonts/telma/Telma-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Telma';
+  src: url('/fonts/telma/Telma-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Telma';
+  src: url('/fonts/telma/Telma-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* PALLY FONT */
+@font-face {
+  font-family: 'Pally';
+  src: url('/fonts/pally/Pally-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pally';
+  src: url('/fonts/pally/Pally-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pally';
+  src: url('/fonts/pally/Pally-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg-root:     #0A0105;
+  --bg-card:     #120008;
+  --pink-neon:   #FF2A6D;
+  --pink-soft:   #FFB3C6;
+  --pink-pale:   #FFE0EB;
+  --amber-flame: #FFD700;
+  --text-muted:  rgba(255,255,255,0.45);
+  --ease-silk:   cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  background: var(--bg-root);
+  color: #fff;
+  font-family: 'Orange Avenue', sans-serif;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+::-webkit-scrollbar { display: none; }
+
+.font-display  { font-family: 'Orange Avenue', sans-serif; }
+.font-script   { font-family: 'Orange Avenue Outline', 'Orange Avenue', sans-serif; }
+.font-body     { font-family: 'Orange Avenue', sans-serif; }
