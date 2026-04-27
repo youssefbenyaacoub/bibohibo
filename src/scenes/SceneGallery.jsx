@@ -5,17 +5,17 @@ import { useEffect, useRef, useState, useCallback } from 'react';
    MEMORY DATA
    ═══════════════════════════════════════════════════ */
 const photoFiles = [
-  'Gemini_Generated_Image_1jekcc1jekcc1jek.png', 'Gemini_Generated_Image_48ary148ary148ar.png',
-  'Gemini_Generated_Image_4s5kau4s5kau4s5k.png', 'Gemini_Generated_Image_6l7rpb6l7rpb6l7r.png',
-  'Gemini_Generated_Image_6yr88a6yr88a6yr8.png', 'Gemini_Generated_Image_72sybw72sybw72sy.png',
-  'Gemini_Generated_Image_7y83w17y83w17y83.png', 'Gemini_Generated_Image_b17u7ib17u7ib17u.png',
-  'Gemini_Generated_Image_cv1mjzcv1mjzcv1m.png', 'Gemini_Generated_Image_ei4mmvei4mmvei4m.png',
-  'Gemini_Generated_Image_gfg8yhgfg8yhgfg8.png', 'Gemini_Generated_Image_gi5uypgi5uypgi5u.png',
-  'Gemini_Generated_Image_gsd65bgsd65bgsd6.png', 'Gemini_Generated_Image_j3xxfj3xxfj3xxfj.png',
-  'Gemini_Generated_Image_ku1idmku1idmku1i.png', 'Gemini_Generated_Image_l2zeg8l2zeg8l2ze.png',
-  'Gemini_Generated_Image_o0xtopo0xtopo0xt.png', 'Gemini_Generated_Image_oc5dzooc5dzooc5d.png',
-  'Gemini_Generated_Image_q3vhnbq3vhnbq3vh.png', 'Gemini_Generated_Image_soimidsoimidsoim.png',
-  'Gemini_Generated_Image_wwm6wswwm6wswwm6.png', 'Gemini_Generated_Image_za3aqbza3aqbza3a.png'
+  'Gemini_Generated_Image_1jekcc1jekcc1jek.webp', 'Gemini_Generated_Image_48ary148ary148ar.webp',
+  'Gemini_Generated_Image_4s5kau4s5kau4s5k.webp', 'Gemini_Generated_Image_6l7rpb6l7rpb6l7r.webp',
+  'Gemini_Generated_Image_6yr88a6yr88a6yr8.webp', 'Gemini_Generated_Image_72sybw72sybw72sy.webp',
+  'Gemini_Generated_Image_7y83w17y83w17y83.webp', 'Gemini_Generated_Image_b17u7ib17u7ib17u.webp',
+  'Gemini_Generated_Image_cv1mjzcv1mjzcv1m.webp', 'Gemini_Generated_Image_ei4mmvei4mmvei4m.webp',
+  'Gemini_Generated_Image_gfg8yhgfg8yhgfg8.webp', 'Gemini_Generated_Image_gi5uypgi5uypgi5u.webp',
+  'Gemini_Generated_Image_gsd65bgsd65bgsd6.webp', 'Gemini_Generated_Image_j3xxfj3xxfj3xxfj.webp',
+  'Gemini_Generated_Image_ku1idmku1idmku1i.webp', 'Gemini_Generated_Image_l2zeg8l2zeg8l2ze.webp',
+  'Gemini_Generated_Image_o0xtopo0xtopo0xt.webp', 'Gemini_Generated_Image_oc5dzooc5dzooc5d.webp',
+  'Gemini_Generated_Image_q3vhnbq3vhnbq3vh.webp', 'Gemini_Generated_Image_soimidsoimidsoim.webp',
+  'Gemini_Generated_Image_wwm6wswwm6wswwm6.webp', 'Gemini_Generated_Image_za3aqbza3aqbza3a.webp'
 ];
 
 const memories = [
@@ -554,7 +554,7 @@ export default function SceneGallery({ onNext }) {
       {/* ── BACKGROUND ── */}
       <div style={{
         position: 'absolute', inset: 0,
-        background: 'url("/background_gift_box.png") center/cover no-repeat',
+        background: 'url("/background_gift_box.webp") center/cover no-repeat',
       }} />
       <div style={{
         position: 'absolute', inset: 0,
@@ -581,7 +581,7 @@ export default function SceneGallery({ onNext }) {
       {/* ═══ LOGO ═══ */}
       <div style={{ position: 'absolute', bottom: 20, left: 20, zIndex: 1100 }}>
         <img
-          src="/les_sims_4_logo.png"
+          src="/les_sims_4_logo.webp"
           style={{ height: 50, filter: 'drop-shadow(0 4px 10px rgba(0,0,0,0.5))' }}
           alt="Les Sims 4"
         />

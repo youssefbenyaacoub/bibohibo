@@ -9,7 +9,7 @@ function GiftMesh({ onOpen }) {
   const [hovered, setHovered] = useState(false);
 
   // Load Minecraft texture
-  const texture = useTexture('/minecraft_gift_texture.png');
+  const texture = useTexture('/minecraft_gift_texture.webp');
   texture.magFilter = THREE.NearestFilter;
   texture.minFilter = THREE.NearestFilter;
 

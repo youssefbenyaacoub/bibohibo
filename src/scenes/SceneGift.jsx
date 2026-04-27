@@ -7,67 +7,67 @@ const QUIZ_DATA = [
     id: 1,
     audio: '/quiz/sound1.ogg',
     options: [
-      { id: 'a', img: '/quiz/photo1_a.png', isCorrect: false },
-      { id: 'b', img: '/quiz/photo1_b.png', isCorrect: true },
-      { id: 'c', img: '/quiz/photo1_c.png', isCorrect: false },
+      { id: 'a', img: '/quiz/photo1_a.webp', isCorrect: false },
+      { id: 'b', img: '/quiz/photo1_b.webp', isCorrect: true },
+      { id: 'c', img: '/quiz/photo1_c.webp', isCorrect: false },
     ],
   },
   {
     id: 2,
     audio: '/quiz/sound2.ogg',
     options: [
-      { id: 'a', img: '/quiz/photo2_a.png', isCorrect: false },
-      { id: 'b', img: '/quiz/photo2_b.png', isCorrect: false },
-      { id: 'c', img: '/quiz/photo2_c.png', isCorrect: true },
+      { id: 'a', img: '/quiz/photo2_a.webp', isCorrect: false },
+      { id: 'b', img: '/quiz/photo2_b.webp', isCorrect: false },
+      { id: 'c', img: '/quiz/photo2_c.webp', isCorrect: true },
     ],
   },
   {
     id: 3,
     audio: '/quiz/sound3.ogg',
     options: [
-      { id: 'a', img: '/quiz/photo3_a.png', isCorrect: false },
-      { id: 'b', img: '/quiz/photo3_b.png', isCorrect: false },
-      { id: 'c', img: '/quiz/photo3_c.png', isCorrect: true },
+      { id: 'a', img: '/quiz/photo3_a.webp', isCorrect: false },
+      { id: 'b', img: '/quiz/photo3_b.webp', isCorrect: false },
+      { id: 'c', img: '/quiz/photo3_c.webp', isCorrect: true },
     ],
   },
   {
     id: 4,
     audio: '/quiz/sound4.ogg',
     options: [
-      { id: 'a', img: '/quiz/photo4_a.png', isCorrect: false },
-      { id: 'b', img: '/quiz/photo4_b.png', isCorrect: true },
-      { id: 'c', img: '/quiz/photo4_c.png', isCorrect: false },
+      { id: 'a', img: '/quiz/photo4_a.webp', isCorrect: false },
+      { id: 'b', img: '/quiz/photo4_b.webp', isCorrect: true },
+      { id: 'c', img: '/quiz/photo4_c.webp', isCorrect: false },
     ],
   },
   {
     id: 5,
     audio: '/quiz/sound5.ogg',
     options: [
-      { id: 'a', img: '/quiz/photo5_a.png', isCorrect: false },
-      { id: 'b', img: '/quiz/photo5_b.png', isCorrect: true },
-      { id: 'c', img: '/quiz/photo5_c.png', isCorrect: false },
+      { id: 'a', img: '/quiz/photo5_a.webp', isCorrect: false },
+      { id: 'b', img: '/quiz/photo5_b.webp', isCorrect: true },
+      { id: 'c', img: '/quiz/photo5_c.webp', isCorrect: false },
     ],
   },
   {
     id: 6,
     audio: '/quiz/sound6.mp3',
     options: [
-      { id: 'a', img: '/quiz/photo6_a.png', isCorrect: true },
-      { id: 'b', img: '/quiz/photo6_b.png', isCorrect: false },
-      { id: 'c', img: '/quiz/photo6_c.png', isCorrect: false },
+      { id: 'a', img: '/quiz/photo6_a.webp', isCorrect: true },
+      { id: 'b', img: '/quiz/photo6_b.webp', isCorrect: false },
+      { id: 'c', img: '/quiz/photo6_c.webp', isCorrect: false },
     ],
   },
 ];
 
 const MEMORY_IMAGES = [
-  '/book_photos/Gemini_Generated_Image_1jekcc1jekcc1jek.png',
-  '/book_photos/Gemini_Generated_Image_48ary148ary148ar.png',
-  '/book_photos/Gemini_Generated_Image_4s5kau4s5kau4s5k.png',
-  '/book_photos/Gemini_Generated_Image_6l7rpb6l7rpb6l7r.png',
-  '/book_photos/Gemini_Generated_Image_6yr88a6yr88a6yr8.png',
-  '/book_photos/Gemini_Generated_Image_72sybw72sybw72sy.png',
-  '/book_photos/Gemini_Generated_Image_7y83w17y83w17y83.png',
-  '/book_photos/Gemini_Generated_Image_b17u7ib17u7ib17u.png'
+  '/book_photos/Gemini_Generated_Image_1jekcc1jekcc1jek.webp',
+  '/book_photos/Gemini_Generated_Image_48ary148ary148ar.webp',
+  '/book_photos/Gemini_Generated_Image_4s5kau4s5kau4s5k.webp',
+  '/book_photos/Gemini_Generated_Image_6l7rpb6l7rpb6l7r.webp',
+  '/book_photos/Gemini_Generated_Image_6yr88a6yr88a6yr8.webp',
+  '/book_photos/Gemini_Generated_Image_72sybw72sybw72sy.webp',
+  '/book_photos/Gemini_Generated_Image_7y83w17y83w17y83.webp',
+  '/book_photos/Gemini_Generated_Image_b17u7ib17u7ib17u.webp'
 ];
 
 /* ═══════════════════════════════════════════════════
@@ -242,7 +242,7 @@ export default function SceneGift({ onNext }) {
   return (
     <div style={{
       width: '100%', height: '100%',
-      backgroundImage: 'url(/background_gift_box.png)',
+      backgroundImage: 'url(/background_gift_box.webp)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       display: 'flex', flexDirection: 'column',

@@ -73,7 +73,7 @@ export default function SceneTown({ currentStep, onEnter, completedSteps }) {
   return (
     <div style={{
       width: '100%', height: '100%',
-      backgroundImage: 'url(/town_background.png)',
+      backgroundImage: 'url(/town_background.webp)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       position: 'relative',
@@ -126,7 +126,7 @@ export default function SceneTown({ currentStep, onEnter, completedSteps }) {
           filter: 'drop-shadow(0 10px 10px rgba(0,0,0,0.3))'
         }}
       >
-        <img src="/character.png" style={{ 
+        <img src="/character.webp" style={{ 
           width:'100%', 
           imageRendering:'pixelated',
           display: 'block'
