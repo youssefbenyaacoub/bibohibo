@@ -171,23 +171,47 @@ function MemoryGame({ onComplete }) {
         })}
       </div>
 
-      {/* Completion Button */}
+      {/* Completion Overlay */}
       {matched.length === MEMORY_IMAGES.length && (
-        <Motion.button
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          onClick={onComplete}
+        <Motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           style={{
-            marginTop: 40, padding: '18px 60px',
-            background: 'linear-gradient(135deg, #FF0080 0%, #7928CA 100%)',
-            color: '#fff', borderRadius: 40, border: 'none',
-            fontSize: 22, fontWeight: 900, cursor: 'pointer',
-            boxShadow: '0 15px 40px rgba(255,0,128,0.4)',
-            textTransform: 'uppercase', letterSpacing: 2, fontFamily: "'Pally', sans-serif"
+            position: 'absolute', inset: 0, 
+            background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(10px)',
+            display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+            zIndex: 100, borderRadius: 20
           }}
         >
-          Return to Town
-        </Motion.button>
+          <Motion.div
+            initial={{ scale: 0.5, y: 50 }}
+            animate={{ scale: 1, y: 0 }}
+            transition={{ type: 'spring', damping: 15 }}
+            style={{ textAlign: 'center' }}
+          >
+            <h2 style={{ fontSize: 48, color: '#fff', fontWeight: 900, marginBottom: 20, textShadow: '0 0 20px #FF0080' }}>
+              EXCELLENT!
+            </h2>
+            <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: 20, marginBottom: 40 }}>
+              You matched all the memories in {timer} seconds!
+            </p>
+            <Motion.button
+              whileHover={{ scale: 1.05, boxShadow: '0 0 30px #FF0080' }}
+              whileTap={{ scale: 0.95 }}
+              onClick={onComplete}
+              style={{
+                padding: '20px 60px',
+                background: 'linear-gradient(135deg, #FF0080 0%, #7928CA 100%)',
+                color: '#fff', borderRadius: 50, border: 'none',
+                fontSize: 24, fontWeight: 900, cursor: 'pointer',
+                boxShadow: '0 15px 40px rgba(255,0,128,0.4)',
+                textTransform: 'uppercase', letterSpacing: 2, fontFamily: "'Pally', sans-serif"
+              }}
+            >
+              Return to Town
+            </Motion.button>
+          </Motion.div>
+        </Motion.div>
       )}
     </div>
   );
@@ -249,7 +273,8 @@ export default function SceneGift({ onNext }) {
       alignItems: 'center', justifyContent: 'center',
       position: 'relative',
       fontFamily: "'Pally', sans-serif",
-      overflow: 'hidden'
+      overflowY: 'auto',
+      padding: '40px 0'
     }}>
       <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.4)', pointerEvents: 'none' }} />
 
